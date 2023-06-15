@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAEA,AAAA,CAAC,CAAC;EACE,SAAS,EAAE,GAAG;EACd,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACZ;;AAED,AAAA,IAAI,CAAC;EACD,gBAAgB,EATN,IAAI;EAUd,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,IAAI;CACd",
     "sources": [
-        "../style/mainStyle.scss"
+        "../sass/mainStyle.scss"
     ],
     "names": [],
     "file": "mainStyle.css"

@@ -1,0 +1,33 @@
+.top {
+    background-color: #404040;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top div {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .title {
+    width: 40% !important;
+}
+
+.city-container {
+    margin-top: 33px;
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 2px;
+    border-bottom: 1px solid #404040;
+    font-size: 19px;
+}

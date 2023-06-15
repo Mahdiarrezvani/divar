@@ -1,0 +1,25 @@
+.top {
+    background-color: #404040;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.type-advertisements-container {
+    margin-top: 40px;
+}
+
+.type {
+    border-bottom: 1px solid #404040;
+    padding: 15px 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.type i {
+    margin-left: 10px;
+}

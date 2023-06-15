@@ -1,0 +1,70 @@
+.container {
+  margin-top: 62px;
+}
+
+.top {
+  background-color: #404040;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 15px 20px;
+  font-size: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account-number {
+  line-height: 25px;
+  font-size: 17px;
+}
+
+.account-number div {
+  text-align: left;
+  border-bottom: 1px solid #3d3d3d;
+  padding-bottom: 10px;
+}
+
+.account-number button {
+  color: #c5c5c5;
+  border: 1px solid #4d4d4d;
+  background-color: #404040;
+  border-radius: 50px;
+  padding: 7px 20px;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.asd div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.line {
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background-color: #464646;
+  border: 1px solid #5e5e5e;
+  left: 0;
+}
+
+.mr-t {
+  margin-top: 7px;
+}
+
+.mr-b {
+  margin-bottom: 44px;
+}
+/*# sourceMappingURL=mydivar.css.map */
