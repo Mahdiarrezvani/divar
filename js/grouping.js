@@ -32,13 +32,16 @@ function findBranchesChosen() {
 function createElem(branche) {
     branche.sebsetAdvertisements.forEach(function (info) {
         let link = info.label.replaceAll(' ', '-')
+        // ! شرط کلین کن
         let isSubset = ''
         if (info.subsetSubset) {
             isSubset = '<span>></span>'
         } else {
             isSubset = ''
         }
-        typeAdvertisementsContainer.insertAdjacentHTML('beforeend', `
+        // ! شرط کلین کن
+        if (info.subsetSubset) {
+            typeAdvertisementsContainer.insertAdjacentHTML('beforeend', `
             <div>
                 <a href="grouping.html?type-grouping=${branche.label}&sub-set=${link}">
                     <div class="type">
@@ -47,6 +50,16 @@ function createElem(branche) {
                     </div>
                 </a>
             </div>`);
+        } else {
+            typeAdvertisementsContainer.insertAdjacentHTML('beforeend', `
+            <div>
+                <a href="classifiedAds.html?branche=${link}">
+                    <div class="type">
+                        <div>${info.label}</span></div>
+                    </div>
+                </a>
+            </div>`);
+        }
     });
 }
 function findSybsetBranchesChosen() {
@@ -55,7 +68,6 @@ function findSybsetBranchesChosen() {
     let branche = branches.find(function (info) {
         return info.label == groupingChosen
     });
-    // console.log(groupingChosenSubset);
     let subsetBranche = branche.sebsetAdvertisements.find(function (info) {
         return info.label == groupingChosenSubset
     });
@@ -65,21 +77,17 @@ function findSybsetBranchesChosen() {
     }
 }
 function createSubsetGrouping(branche) {
-    // if(branche.subsetSubset){س
-    // }else{
-    //     // go to brance
-    // }
     branche.subsetSubset.forEach(function (info) {
-        // <a href="grouping.html?type-grouping=${branche}&sub-set=${link}">
-        // a href = go to branche
+        // ! chenge name  <groupingChosenSubset>
+        let groupingChosenSubset = info.replaceAll(' ', '-')
         typeAdvertisementsContainer.insertAdjacentHTML('beforeend', `
-            <div>
-                <a href="#">
-                    <div class="type">
-                        <div>${info}</span></div>
-                    </div>
-                </a>
-            </div>`);
+        <div>
+            <a href="classifiedAds.html?branche=${groupingChosenSubset}">
+                <div class="type">
+                    <div>${info}</span></div>
+                </div>
+            </a>
+        </div>`);
     });
 }
 if (getMainGrouping) {

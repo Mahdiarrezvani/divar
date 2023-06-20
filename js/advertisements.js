@@ -1,15 +1,18 @@
 import { branches, advertisements } from './mixins.js';
 const categoryContainer = document.querySelector('.catregory-container');
-const productContainer = document.querySelector('.product-container');
+const adsContainer = document.querySelector('.ads');
 branches.forEach(function (category) {
+    let params = category.label.replace(" ", "-")
     categoryContainer.insertAdjacentHTML('beforeend', `
         <div class="catregory">
-            <img src="" />
-            <p class="title">${category.label}</p>
+            <a href="classifiedAds.html?branche=${params}">
+                <img src="" />
+                <p class="title">${category.label}</p>
+            </a>
         </div>`);
 });
 advertisements.forEach(function (product) {
-    productContainer.insertAdjacentHTML('afterbegin', `
+    adsContainer.insertAdjacentHTML('afterbegin', `
         <div class="product">
             <div class="specifications">
                 <p class="title-product">${product.title}</p>

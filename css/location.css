@@ -1,46 +1,12 @@
-.top {
-  background-color: #404040;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  padding: 12px;
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.top div {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.top .title {
-  width: 40% !important;
-}
-
-.city-container {
-  margin-top: 33px;
-}
-
-.city {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 18px 2px;
-  border-bottom: 1px solid #404040;
+.state a {
   font-size: 19px;
+  border-bottom: 1px solid #404040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 2px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=location.css.map */

@@ -1,0 +1,53 @@
+.top {
+  background-color: #404040;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 12px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top div {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top .title {
+  width: 40% !important;
+}
+
+.container {
+  margin: 33px 0 45px;
+}
+
+.btn-submit {
+  background-color: #404040;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 13px;
+  text-align: end;
+}
+
+.submit {
+  border: none;
+  color: #fff;
+  background-color: #ff3232;
+  padding: 10px 60px;
+  font-size: 21px;
+  border-radius: 7px;
+}
+/*# sourceMappingURL=state-city.css.map */

@@ -1,9 +1,9 @@
 import { dataBaseCity } from './mixins.js'
 function elementHandler() {
-    let cityContainer = document.querySelector('.city-container');
+    let statesContainer = document.querySelector('.states-container');
     dataBaseCity.forEach(function (infoCity) {
-        cityContainer.insertAdjacentHTML('beforeend', `
-        <div class="city">
+        statesContainer.insertAdjacentHTML('beforeend', `
+        <div class="state">
             <a href="showCity.html?id-city=${infoCity.id}">
                 <span class="title">${infoCity.city}</span>
                 <span>></span>
