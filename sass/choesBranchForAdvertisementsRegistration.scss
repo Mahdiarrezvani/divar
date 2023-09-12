@@ -1,0 +1,51 @@
+@import 'mainStyle', 'menu';
+
+.container {
+    margin-top: 40px;
+}
+
+.top {
+    background-color: #404040;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top input {
+    padding-right: 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #525252;
+    border: none;
+    width: 80%;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.guide {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    border-bottom: 1px solid #404040;
+    padding-bottom: 15px;
+}
+
+// 
+.type {
+    // .branch {
+    border-bottom: 1px solid #404040;
+    padding: 15px 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.type i {
+    // .branch i {
+    margin-left: 10px;
+}

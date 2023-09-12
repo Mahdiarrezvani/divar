@@ -1,4 +1,4 @@
-import { dataBaseCity } from "./mixins.js"
+import { dataBaseCity } from "./DataBase.js"
 let citysContainer = document.querySelector('.citys-container');
 let params = new URLSearchParams(location.search)
 let idCity = params.get('id-city')

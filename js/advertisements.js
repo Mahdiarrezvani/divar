@@ -1,4 +1,4 @@
-import { branches, advertisements } from './mixins.js';
+import { branches, advertisements } from './DataBase.js';
 const categoryContainer = document.querySelector('.catregory-container');
 const adsContainer = document.querySelector('.ads');
 branches.forEach(function (category) {
@@ -14,20 +14,22 @@ branches.forEach(function (category) {
 advertisements.forEach(function (product) {
     adsContainer.insertAdjacentHTML('afterbegin', `
         <div class="product">
-            <div class="specifications">
-                <p class="title-product">${product.title}</p>
-                <div>
-                    <p class="price">${product.price}</p>
-                    <p class="date">asdas</p>
+            <a href="showAdvertisemen.html?id=${product.id}">
+                <div class="specifications">
+                    <p class="title-product">${product.title}</p>
+                    <div>
+                        <p class="price">${product.price}</p>
+                        <p class="date">asdas</p>
+                    </div>
                 </div>
-            </div>
-            <div class="image-product">
-                <img src="${product.mainImageSrc}" />
-            </div>
+                <div class="image-product">
+                    <img src="image/image.png" />
+                </div>
+            </a>
         </div>`);
 });
 // function getProduct() {
-//     fetch('https://divardatabase-default-rtdb.firebaseio.com/product.json')
+//     fetch('https://divardatabase-default-rtdb.firebasesio.com/product.json')
 //         .then(data => data.json())
 //         .then(data => {
 //             let productsData = Object.entries(data)

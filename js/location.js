@@ -1,4 +1,4 @@
-import { dataBaseCity } from './mixins.js'
+import { dataBaseCity } from './DataBase.js'
 function elementHandler() {
     let statesContainer = document.querySelector('.states-container');
     dataBaseCity.forEach(function (infoCity) {

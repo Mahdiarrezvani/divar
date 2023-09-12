@@ -4,16 +4,12 @@
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 5;
-}
-
-.menu {
     align-items: center;
-    height: 57px;
+    height: 58px;
     background-color: #383838;
     display: flex;
-    justify-content: space-around;
-    font-size: 17px;
+    // justify-content: space-around;
+    // font-size: 17px;
 }
 
 .menu div {
@@ -24,13 +20,14 @@
 
 .menu div i {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
-.menu div a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    text-decoration: none;
-}
+// .menu div a {
+// background-color: red;
+// display: block;
+// width: 100%;
+// height: 100%;
+// color: #fff;
+// text-decoration: none;
+// }

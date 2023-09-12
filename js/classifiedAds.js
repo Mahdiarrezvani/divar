@@ -1,21 +1,20 @@
-import { advertisements } from "./mixins.js"
+import { advertisements } from "./DataBase.js"
 let adsContainer = document.querySelector('.ads');
 adsContainer.innerHTML = '';
 // 
+let nameBranchFilter=document.querySelector('.name-branch-filter');
 let params = new URLSearchParams(location.search)
 let getBranche = params.get('branche')
-let arrayAdsBranche = []
 let groupingChosenSubset = getBranche.replaceAll('-', ' ')
-
+nameBranchFilter.innerHTML = groupingChosenSubset;
 // ! function
-function findAdsBranche() {
-    advertisements.find(function (info) {
-        if (info.branche === groupingChosenSubset) {
-            arrayAdsBranche.push(info)
-        }
-    })
-    createAdsBranche(arrayAdsBranche)
+function filterAdsBranche() {
+    let itemsFiltered = advertisements.filter(function (info) {
+        return info.branche === groupingChosenSubset || info.mainBranche === groupingChosenSubset
+    });
+    createAdsBranche(itemsFiltered)
 }
+
 function createAdsBranche(ads) {
     ads.forEach(function (info) {
         adsContainer.insertAdjacentHTML('afterbegin', `
@@ -33,4 +32,10 @@ function createAdsBranche(ads) {
             </div>`);
     });
 }
-findAdsBranche()
+filterAdsBranche()
+// 
+// 
+// 
+// let filterBtn=document.querySelector('.filter-btn');
+// function filter(){}
+// filterBtn.addEventListener('click',filter);

@@ -1,0 +1,70 @@
+@import 'mainStyle';
+$color-text: #c7c7c7;
+
+.top {
+    position: fixed;
+    display: flex;
+    width: 92.3%;
+    left: 0;
+    top: 0;
+    padding: 10px 13px;
+    right: 0;
+    justify-content: space-between;
+}
+
+.top .left {
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+}
+
+.show-slider {
+    background-color: rgb(255, 70, 70);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 250px;
+    // .show-slider img {}
+}
+
+.container-text {
+    margin-top: 250px;
+}
+
+.branche {
+    color: $color-text;
+    // padding: 0 0 20px;
+    margin: 15px 0 25px;
+}
+
+.name-ad {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.posting-an-ad-time {
+    color: $color-text;
+    border-bottom: 1px solid #464646;
+    padding: 17px 0 14px;
+}
+
+.specification p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: 1px solid #464646;
+    padding: 14px 0;
+}
+
+.specification p .title {
+    color: $color-text;
+    // .specification p .value {}
+}
+
+.description .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
