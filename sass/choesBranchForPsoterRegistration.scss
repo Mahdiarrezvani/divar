@@ -1,8 +1,4 @@
-@import 'mainStyle', 'menu';
-
-.container {
-    margin-top: 40px;
-}
+@import 'mainStyle';
 
 .top {
     background-color: #404040;
@@ -13,17 +9,17 @@
     padding: 8px 12px;
     display: flex;
     justify-content: space-between;
-}
 
-.top input {
-    padding-right: 10px;
-    color: #fff;
-    font-size: 16px;
-    background-color: #525252;
-    border: none;
-    width: 80%;
-    height: 30px;
-    border-radius: 2px;
+    input {
+        padding-right: 10px;
+        color: #fff;
+        font-size: 16px;
+        background-color: #525252;
+        border: none;
+        width: 80%;
+        height: 30px;
+        border-radius: 2px;
+    }
 }
 
 .guide {
@@ -35,17 +31,14 @@
     padding-bottom: 15px;
 }
 
-// 
 .type {
-    // .branch {
     border-bottom: 1px solid #404040;
     padding: 15px 0;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
-}
 
-.type i {
-    // .branch i {
-    margin-left: 10px;
+    i {
+        margin-left: 10px;
+    }
 }

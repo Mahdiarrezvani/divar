@@ -1,4 +1,4 @@
-@import 'mainStyle', 'menu';
+@import 'mainStyle';
 
 .top {
     background-color: #404040;
@@ -20,31 +20,31 @@
     display: flex;
     justify-content: space-between;
     background-color: #5c5c5c;
-}
 
-.divar-postman img {
-    width: 55px;
-    height: 55px;
-}
+    .right,
+    .left {
+        margin: 15px;
+    }
 
-.title {
-    font-size: 18px;
-}
+    img {
+        width: 55px;
+        height: 55px;
+    }
 
-.description {
-    color: #c0c0c0;
-}
+    .right div {
+        font-size: 17px;
+        margin-right: 7px;
+        line-height: 25px;
+        display: inline-block;
 
-.divar-postman .right,
-.divar-postman .left {
-    margin: 15px;
-}
+        .title {
+            font-size: 18px;
+        }
 
-.divar-postman .right div {
-    font-size: 17px;
-    margin-right: 7px;
-    line-height: 25px;
-    display: inline-block;
-}
+        .description {
+            color: #c0c0c0;
+        }
+    }
 
-.divar-postman .left {}
+    .left {}
+}

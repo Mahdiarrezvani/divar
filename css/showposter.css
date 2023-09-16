@@ -45,13 +45,17 @@ a {
 }
 
 .show-slider {
-  background-color: #ff4646;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
   height: 250px;
+}
+
+.show-slider img {
+  width: 100%;
+  height: 100%;
 }
 
 .container-text {
@@ -63,12 +67,12 @@ a {
   margin: 15px 0 25px;
 }
 
-.name-ad {
+.name-poster {
   font-size: 22px;
   font-weight: bold;
 }
 
-.posting-an-ad-time {
+.posting-an-poster-time {
   color: #c7c7c7;
   border-bottom: 1px solid #464646;
   padding: 17px 0 14px;
@@ -95,4 +99,4 @@ a {
   font-weight: bold;
   margin: 20px 0;
 }
-/*# sourceMappingURL=showAdvertisemen.css.map */
+/*# sourceMappingURL=showPoster.css.map */

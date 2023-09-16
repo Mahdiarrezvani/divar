@@ -9,6 +9,7 @@ function findCity() {
     })
     createElem(cityFound)
 }
+
 function createElem(cityFound) {
     citysContainer.innerHTML = `
         <div class="city">

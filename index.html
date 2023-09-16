@@ -4,38 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/advertisements.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <div class="container">
       <div class="section-top">
-        <!-- search-box -->
-        <!-- todo Change Name -->
-        <div class="section-top-fixed">
           <div class="search-box">
             <input type="text" class="search-input" />
-            <span class="location-btn"><a href="/location.html">نیشابور @</a></span>
+            <span class="location-btn"><a href="/location.html">نیشابور<iconify-icon icon="carbon:location"></iconify-icon></a></span>
           </div>
-        </div>
-        <!-- End search-box -->
-        <!-- todo Exchange Name  -->
-        <!-- Catregory Container -->
         <div class="catregory-container"></div>
-        <!-- End Catregory Container -->
       </div>
-      <!-- Asd -->
-      <div class="ads"></div>
-      <!-- End Asd -->
+      <div class="posters-container"></div>
     </div>
     <!-- Menu -->
-    <div class="menu">
-      <div><a class="link" href="index.html"><i>@</i>آگهی ها</a></div>
-      <div><a class="link" href="grouping.html"><i>@</i>دسته ها</a></div>
-      <div><a class="link" href="choesBranchForAdvertisementsRegistration.html"><i>@</i>ثبت آگهی</a></div>
-      <div><a class="link" href="chat.html"><i>@</i>چت</a></div>
-      <div><a class="link" href="myDivar.html"><i>@</i>دیوار من</a></div>
-    </div>
-    <!-- End Menu -->
+    <menu-component></menu-component>
   </body>
-  <script src="js/advertisements.js" type="module"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="component/menu.js"></script>
+  <script src="js/index.js" type="module"></script>
 </html>

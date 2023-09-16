@@ -8,16 +8,16 @@
     font-size: 20px;
     display: flex;
     justify-content: space-between;
-}
 
-.top div {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-}
+    div {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.top .title {
-    width: 40% !important;
+    .title {
+        width: 40% !important;
+    }
 }
 
 .container {

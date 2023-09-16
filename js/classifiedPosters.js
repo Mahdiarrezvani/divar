@@ -1,16 +1,14 @@
-import { advertisements as posters } from "./DataBase.js"
+import { posters } from "./DataBase.js"
 let postersContainer = document.querySelector('.posters-container');
-postersContainer.innerHTML = '';
-// 
-let nameBranchFilter=document.querySelector('.name-branch-filter');
+let nameBranchChoesed=document.querySelector('.name-branch-filter');
 let params = new URLSearchParams(location.search)
 let getBranche = params.get('branche')
-let groupingChosenSubset = getBranche.replaceAll('-', ' ')
-nameBranchFilter.innerHTML = groupingChosenSubset;
+let categoryChosenSubset = getBranche.replaceAll('-', ' ')
+nameBranchChoesed.innerHTML = categoryChosenSubset;
 // ! function
 function filterposters() {
     let posterFiltered = posters.filter(function (info) {
-        return info.branche === groupingChosenSubset || info.mainBranche === groupingChosenSubset
+        return info.branche === categoryChosenSubset || info.mainBranche === categoryChosenSubset
     });
     createposters(posterFiltered)
 }

@@ -1,18 +1,7 @@
-@import 'mainStyle', 'menu';
+@import 'mainStyle';
 
 .container {
     margin-top: 40px;
-}
-
-.top {
-    background-color: #404040;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    padding: 8px 12px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .title {
@@ -36,10 +25,11 @@
     font-size: 20px;
     display: flex;
     justify-content: space-between;
-}
 
-.top i {
-    margin-left: 15px;
+    i {
+        margin-left: 15px;
+    }
+
 }
 
 .select-category,
@@ -51,7 +41,7 @@
     font-size: 18px;
 }
 
-.advertisement-image {
+.poster-image {
     margin-top: 25px;
 }
 
@@ -60,47 +50,47 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+
+    .input-image {
+        position: relative;
+        border: 2px dashed #8d8d8d;
+        width: 90px;
+        height: 90px;
+
+        input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .text {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text i {
+            font-size: 30px;
+        }
+
+        .text p {
+            margin-top: 10px;
+        }
+    }
 }
 
-.input-image {
-    position: relative;
-    border: 2px dashed #8d8d8d;
-    width: 90px;
-    height: 90px;
-}
-
-.input-image input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-}
-
-.input-image .text {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.input-image .text i {
-    font-size: 30px;
-}
-
-.input-image .text p {
-    margin-top: 10px;
-}
-
-.title-advertisement .titleInput {
+.title-poster .titleInput {
     height: 40px;
 }
 
-.description-advertisement {
+.description-poster {
     margin-top: 30px;
 }
 
@@ -129,24 +119,20 @@
 
 // !           specification       specification            specification
 .specification-container {
-    // .specification {}
-
     .title {
         margin: 12px 0;
         font-size: 22px;
     }
 
-    .specifications {
-        p {
-            border-bottom: 1px solid #505050;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            font-size: 18px;
+    p {
+        border-bottom: 1px solid #505050;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
 
-            .property {
-                color: #8d8d8d;
-            }
+        .property {
+            color: #8d8d8d;
         }
     }
 }

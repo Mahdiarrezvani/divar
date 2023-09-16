@@ -4,27 +4,27 @@ let getBranch = params.get('branche');
 let branche = getBranch.replaceAll('-', ' ');
 let container = document.querySelector('.container');
 function findBranche() {
-    let brancheFinded = specifications.find(function (info) {
-        return info.branche == branche;
-    });
-    showPage(brancheFinded)
+  let brancheFinded = specifications.find(function (info) {
+    return info.branche == branche;
+  });
+  showPage(brancheFinded)
 }
 findBranche();
 function showPage(brancheFinded) {
-    if (!brancheFinded.isShowImage) {
-        container.insertAdjacentHTML('beforeend', `
+  if (brancheFinded.isShowImage) {
+    container.insertAdjacentHTML('beforeend', `
         <div class="top">
         <div><i>@@</i><span>ثبت آگهی</span></div>
         <p>re</p>
       </div>
       <div class="container">
-        <a href="choesBranchForAdvertisementsRegistration.html">
+        <a href="choesBranchForPosterRegistration.html">
           <div class="select-category">
             <span>دسته بندی</span><span class="branche">${branche}</span>
           </div>
         </a>
         <div class="guide"><span>راهنمای ثبت آگهی</span><i>></i></div>
-        <div class="advertisement-image">
+        <div class="poster-image">
           <p class="title">عکس آگهی</p>
           <p class="description">
             افزودن عکس بازدید آگهی شما را تا سه برابر افزایش میدهد.
@@ -68,14 +68,14 @@ function showPage(brancheFinded) {
               </div>
             </div>
           </div>
-          <div class="title-advertisement">
+          <div class="title-poster">
             <p class="title">عنوان آگهی</p>
             <p class="description">
               در عنوان آگهی به موارد مهم و چشمگیر اشاره کنید.
             </p>
             <input type="text" class="titleInput" />
           </div>
-          <div class="description-advertisement">
+          <div class="description-poster">
             <p class="title">توضیحات آگهی</p>
             <p class="description">
               جزئیات و نکات جالب توجه آگهی خود را کامل و دقیق بنویسید. نوشتن شماره
@@ -86,6 +86,7 @@ function showPage(brancheFinded) {
           <button class="submit">بعدی</button>
         </div>
       </div>
+      
       <div class="menu">
         <div>
           <a class="link" href="index.html"><i>@</i>آگهی ها</a>
@@ -94,9 +95,7 @@ function showPage(brancheFinded) {
           <a class="link" href="grouping.html"><i>@</i>دسته ها</a>
         </div>
         <div>
-          <a class="link" href="choesBranchForAdvertisementsRegistration.html"
-            ><i>@</i>ثبت آگهی</a
-          >
+          <a class="link" href="choesBranchForPosterRegistration.html"><i>@</i>ثبت آگهی</a>
         </div>
         <div>
           <a class="link" href="chat.html"><i>@</i>چت</a>
@@ -105,10 +104,12 @@ function showPage(brancheFinded) {
           <a class="link" href="myDivar.html"><i>@</i>دیوار من</a>
         </div>
       </div>`);
-    } else {
-        // container.insertAdjacentHTML('beforeend', ``);
-    }
+  } else {
+    // container.insertAdjacentHTML('beforeend', ``);
+  }
 }
+
+//!!!!!!! specification.html
 // let titleAds = document.querySelector('.titleInput');
 // let descriptionAds = document.querySelector('.descriptionInput');
 // let submitBtn = document.querySelector('.submit');
