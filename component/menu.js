@@ -2,34 +2,35 @@ let template = document.createElement('template');
 template.innerHTML = `
 <style>
     .menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
-        align-items: center;
-        height: 55px;
-        background-color: #383838;
-        display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      align-items: center;
+      height: 55px;
+      background-color: #383838;
+      display: flex;
+    }
 
-        div {
-            width: 100%;
-            height: 100%;
+    .menu div {
+      width: 100%;
+      height: 100%;
+    }
 
-            span{
-                margin-top: 7px;
-                display: block;
-                margin-bottom: 5px;
-                font-size: 19px;
-            }
-            
-            a {
-                text-decoration: none;
-                color: #fff;
-            }
-        }
+    .menu div span {
+      margin-top: 7px;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 19px;
+    }
+
+    .menu div a {
+      text-decoration: none;
+      color: #fff;
     }
 </style>
+
 <div class="menu">
     <div><a class="link" href="index.html"><span>دیوار</span>آگهی ها</a></div>
     <div><a class="link" href="grouping.html"><span>@</span>دسته ها</a></div>
