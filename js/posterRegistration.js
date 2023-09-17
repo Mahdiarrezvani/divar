@@ -86,24 +86,8 @@ function showPage(brancheFinded) {
           <button class="submit">بعدی</button>
         </div>
       </div>
-      
-      <div class="menu">
-        <div>
-          <a class="link" href="index.html"><i>@</i>آگهی ها</a>
-        </div>
-        <div>
-          <a class="link" href="grouping.html"><i>@</i>دسته ها</a>
-        </div>
-        <div>
-          <a class="link" href="choesBranchForPosterRegistration.html"><i>@</i>ثبت آگهی</a>
-        </div>
-        <div>
-          <a class="link" href="chat.html"><i>@</i>چت</a>
-        </div>
-        <div>
-          <a class="link" href="myDivar.html"><i>@</i>دیوار من</a>
-        </div>
-      </div>`);
+      <menu-component></menu-component>
+      `);
   } else {
     // container.insertAdjacentHTML('beforeend', ``);
   }
